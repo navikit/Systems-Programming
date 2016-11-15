@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+//project source code (process manager/parent)
 
 int main(int argc, char **argv){
     //checks if there is a valid number of arguements
