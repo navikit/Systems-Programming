@@ -3,13 +3,13 @@
 #include <string.h>
 #include <pthread.h>
 
-pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
 
 void main(int argc, char** argv){  
-  int n = argv[2]
+  int n = argv[1]
   pthread_t tid[n];
   for ( i = 0; i < n; i++){
-    pthread_create(&tid[i], NULL, compressT, argements);
+    pthread_create(&tid[i], NULL, compressT, arguements);
   }
   for ( i = 0; i < n; i++){
     pthread_join(tid[n], NULL);
