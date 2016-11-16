@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int main(FILE * fp, int num_of_parts){
-  int n = num_of_parts
+
+int main(FILE * fp, int num_of_parts, int char_per_part){
   
+  int n = num_of_parts
   if (n > 1){
     pid_t [num_of_parts];
-    splitup(FILE *fp, num_of_parts)
   }
   
   for(int  i = 0; i < n; i++){
@@ -31,22 +31,7 @@ FILE *make_new_file (int file_counter){
   char file outputname[40];
   sprintf(fileoutputname, "%s_txt_LOLS%d, file_name, file_counter);
   return fopen(fileoutputname, "w");
-}
-
-
-//Split up file with this many characters in each
-int splitup(FILE *fp, int parts)
-  fp = fopen(FILE_NAME, "r");
-  int counter = 0;
-  
-  while( fgetc(fp) != EOF){
-    counter++;
-  }
-  fclose(fp):
-  counter = counter/parts
-  return counter;
-}
-  
+}  
   
 void compressP(FILE *fp, part_number){
   
